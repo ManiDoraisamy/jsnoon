@@ -1,0 +1,77 @@
+textarea
+{
+	border: 2px solid #7F99B9;
+	width: 380px;
+	height: 500px;
+	padding: 2px;
+	font-family: Tahoma, sans-serif;
+	font-size: 10px;
+}
+.url
+{
+	border: 2px solid #7F99B9;
+	width: 300px;
+}
+.load
+{
+	border: 2px solid #7F99B9;
+	width: 80px;
+	background-color: white;
+}
+.pane
+{
+	border: 0px solid #7F99B9;
+	width: 600px;
+	height: 500px;
+	background-image: url('../images/atom.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.center
+{
+	border: 0px solid #7F99B9;
+	text-align: center;
+	font-family: Tahoma, sans-serif;
+	font-size: 12px;
+	overflow-x: hidden;
+	overflow: -moz-scrollbars-vertical;
+	overflow-y: auto;
+}
+.value
+{
+	width: 90px;
+	font-family: arial;
+	font-size: 10px;
+	color: black;
+	border:0px solid gray;
+	background-color: transparent;
+}
+.child
+{
+	border: 0px solid #7F99B9;
+	text-align: center;
+	background-image: url('../images/electron.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.child:hover
+{
+	border: 0px solid #7F99B9;
+	text-align: center;
+	background-image: url('../images/electron_highlight.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.child a
+{
+	font-family: arial;
+	font-size: 10px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+td
+{
+	font-family: arial;
+	font-size: 12px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>JSnoon Explorer</title>
+	<script src="scripts/jsnoon.js"></script>
+	<script src="scripts/jsnoon.explorer.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+	<link href="css/explorer.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<table border="0">
+<tr>
+	<td>
+		<form onSubmit='return false'>
+			<input type="text" name="url" class="url" value=""/>
+			<input type="button" class="load" value="Load" onclick="explorer.loadURL(this.form.url.value)"/>
+		</form>
+	</td>
+	<td id="JSnoonHeader">
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td colspan="3">
+	<a href="javascript:explorer.loadURL('test/employee.js');">test/employee.js</a> |
+	<a href="javascript:explorer.loadURL('test/shopping.js');">test/shopping.js</a>
+	</td>
+</tr>
+<tr>
+	<td>
+		<textarea id="JSnoonData">
+		</textarea>
+	</td>
+	<td>
+		<div class="pane" id="JSnoonPane">
+		</div>
+	</td>
+	<td id="child-preview" width="200">
+	</td>
+</tr>
+<tr>
+	<td>
+		Change the contents above and click
+		<a href="javascript:explorer.load();">here</a>
+		to see the changes.
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+</table>
+<script>
+	var explorer = new JSnoonExplorer("JSnoonPane", "JSnoonHeader", "JSnoonData");
+	explorer.loadURL("test/shopping.js");
+</script>
+</body>
+</html>
