@@ -1,0 +1,14 @@
+JSnoon is an enhanced interchange format of JSON that truly represents the way objects are connected in an object oriented programming language. This is based on a blog (Solving the Object-Hierarchical impedance mismatch) that i wrote sometime ago: http://manidoraisamy.blogspot.com/2009/01/solving-object-hierarchical-impedance.html
+
+JSnoon consists of:
+
+Level 0: Related by identity This is the core specification that defines object identity and connecting objects through their identities. In AJAX, you could use this to build a true client-side MVC application. For example, you could build multiple views on top of a single model with true global object references. Object references will remain consistent when you move from one view to another.
+
+Apart from Level 0 specification, JSnoon specifies 3 more optional levels for sophisticated applications:
+
+Level 1: Type system This specification defines primitive datatypes (such as string, number, boolean) and user defined types (such as PurchaseOrder?, Employee) that objects in the graph belong to. It enhances the missing datatypes in JSON such as date. This also enables tools to explore/manipulate objects in the graph meaningfully.
+
+Level 2: Change summary This specification defines how to send only the objects that changed on the server back to client and vice versa. Communicating changesummary on object modifications between the browser and the server will be very efficient and will allow us to implement true incremental page updates.
+
+Level 3: Lazy loading In the server, the network of objects could be huge. Also an object in such network could somehow be connected to every other object in the system. So serializing all the objects in the network is not be possible. So only partial graph of objects are serialized from the server. This specification defines how to load parts of the object graph for performance and fetch objects as you navigate through the object network.
+
